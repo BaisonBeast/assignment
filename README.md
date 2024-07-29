@@ -1,6 +1,6 @@
-# Project Name
 
-![Project Image](https://via.placeholder.com/1200x600.png?text=Project+Image)
+![Project Image]<img width="1440" alt="Screenshot 2024-07-29 at 11 48 08 PM" src="https://github.com/user-attachments/assets/9ebee9d3-f862-4bf7-a83a-4704616c0750"># Project Name
+
 
 ## Live Demo
 
