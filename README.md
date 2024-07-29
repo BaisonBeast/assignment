@@ -1,5 +1,5 @@
 
-![Project Image]<img width="1440" alt="Screenshot 2024-07-29 at 11 48 08 PM" src="https://github.com/user-attachments/assets/9ebee9d3-f862-4bf7-a83a-4704616c0750"># Project Name
+![Project Image]<img width="1440" alt="Screenshot 2024-07-29 at 11 51 08 PM" src="https://github.com/user-attachments/assets/afd046de-c42a-4027-b8c1-f750f053e56c">
 
 
 ## Live Demo
