@@ -1,12 +1,25 @@
+'use client'
 import { RiNotification2Line } from "react-icons/ri";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Home() {
+  
+  const handleClick = async() => {
+    try {
+      const res = await fetch('/api/notification');
+      const response = await res.json();
+      toast(response.message);
+    } catch (err) {
+      toast.error('Something went wrong');
+    }
+  }
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-custom-gradient text-white relative">
       <main className="flex flex-col items-center w-full max-w-md text-center p-4">
         <h1 className="text-xl mt-8">Hola!</h1>
-        <div className="relative flex justify-center items-center my-[140px] w-full h-64">
-          <div className="circle circle-4"></div>
+        <div className="relative flex justify-center items-center my-[100px] w-full h-64">
           <div className="circle circle-3"></div>
           <div className="circle circle-2"></div>
           <div className="circle circle-1"></div>
@@ -16,7 +29,10 @@ export default function Home() {
         </div>
         <h2 className="text-2xl mb-4">Lorem Ipsum...</h2>
         <p className="text-base mb-8">Lorem ipsum dolor sit amet.</p>
-        <button className="w-8/12 px-6 py-2 border-2 border-purple-400 rounded-lg text-white hover:bg-purple-600 transition">
+        <button
+          className="w-8/12 px-6 py-2 border-2 border-purple-400 rounded-lg text-white hover:bg-purple-600 transition"
+          onClick={handleClick}  
+        >
           Send Notification
         </button>
       </main>

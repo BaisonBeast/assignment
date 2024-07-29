@@ -23,10 +23,5 @@
 .circle-3 {
   width: 324px;
   height: 324px;
-}
-
-.circle-4 {
   filter: blur(4px);
-  width: 392px;
-  height: 392px;
 }
