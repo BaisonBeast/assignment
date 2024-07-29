@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 export default function Home() {
   
-  const handleClick = async() => {
+  const pushNotification = async() => {
     try {
       const res = await fetch('/api/notification');
       const response = await res.json();
@@ -31,7 +31,7 @@ export default function Home() {
         <p className="text-base mb-8">Lorem ipsum dolor sit amet.</p>
         <button
           className="w-8/12 px-6 py-2 border-2 border-purple-400 rounded-lg text-white hover:bg-purple-600 transition"
-          onClick={handleClick}  
+          onClick={pushNotification}  
         >
           Send Notification
         </button>
